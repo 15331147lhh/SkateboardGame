@@ -12,6 +12,8 @@ public class SkateboardController : MonoBehaviour {
 
     public float maxRotateSpeed = 5;
 
+    public bool g_grounded;
+
     private float h = 0;
     private float v = 0;
 
