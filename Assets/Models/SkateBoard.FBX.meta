@@ -1,34 +1,30 @@
 fileFormatVersion: 2
-guid: 5b6dda480c0f4b14aba7712289e1cb89
-timeCreated: 1507199166
-licenseType: Pro
+guid: 45c753b7434318d409f43160969f2896
+timeCreated: 1508239007
+licenseType: Free
 ModelImporter:
   serializedVersion: 21
   fileIDToRecycleName:
-    100000: Box001
-    100002: Cone001
-    100004: Cone002
-    100006: Cone003
-    100008: Cone004
-    100010: //RootNode
-    400000: Box001
-    400002: Cone001
-    400004: Cone002
-    400006: Cone003
-    400008: Cone004
-    400010: //RootNode
-    2300000: Box001
-    2300002: Cone001
-    2300004: Cone002
-    2300006: Cone003
-    2300008: Cone004
-    2300010: //RootNode
-    3300000: Box001
-    3300002: Cone001
-    3300004: Cone002
-    3300006: Cone003
-    3300008: Cone004
-    3300010: //RootNode
+    100000: Cone001
+    100002: Cone002
+    100004: Cone003
+    100006: Cone004
+    100008: //RootNode
+    400000: Cone001
+    400002: Cone002
+    400004: Cone003
+    400006: Cone004
+    400008: //RootNode
+    2300000: Cone001
+    2300002: Cone002
+    2300004: Cone003
+    2300006: Cone004
+    2300008: //RootNode
+    3300000: Cone001
+    3300002: Cone002
+    3300004: Cone003
+    3300006: Cone004
+    3300008: //RootNode
     4300000: Box001
     4300002: Cone001
     4300004: Cone002

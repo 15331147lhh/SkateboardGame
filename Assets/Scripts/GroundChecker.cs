@@ -4,15 +4,16 @@ using UnityEngine;
 
 public class GroundChecker : MonoBehaviour {
 
-    private
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.CompareTag("Ground"))
+            transform.parent.GetComponent<SkateboardController>().g_grounded = true;
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if(other.CompareTag("Ground"))
+            transform.parent.GetComponent<SkateboardController>().g_grounded = false;
+    }
 }
