@@ -27,25 +27,34 @@ public class SkateboardController : MonoBehaviour {
     private float h = 0;
     private float v = 0;
 
+    private Quaternion initRotation;
+
+    [SerializeField]
+    private Transform m_centreOfMass;
+
+    private Rigidbody m_rigidbody;
+
+    private void Start()
+    {
+        m_rigidbody = GetComponent<Rigidbody>();
+        m_rigidbody.centerOfMass = m_centreOfMass.localPosition;
+        initRotation = transform.rotation;
+    }
+
     // Update is called once per frame
-    //void Update () {
+    void Update()
+    {
 
 
-    //       if (Input.GetMouseButton(0))
-    //       {
-    //           FindCorrectSwipeInput(Input.GetAxis("Mouse X"), ref h);
-    //           FindCorrectSwipeInput(Input.GetAxis("Mouse Y"), ref v);
-    //       }
+        if (Input.GetKeyDown(KeyCode.Space))
+            RestoreRotation();
+        
 
-
-    //       transform.Translate(new Vector3(-(Mathf.Clamp(v * g_verticalSpeed, maxBackSpeed, maxFwdSpeed)) * Time.deltaTime, 0, 0));
-    //       print("h = " + h + ", v = " + v);
-    //       transform.Rotate(new Vector3(0, h * maxSteeringAngle, 0));
-
-    //   }
+    }
 
     // finds the corresponding visual wheel
     // correctly applies the transform
+
     public void ApplyLocalPositionToVisuals(WheelCollider collider)
     {
         if (collider.transform.childCount == 0)
@@ -96,11 +105,16 @@ public class SkateboardController : MonoBehaviour {
     void FindCorrectSwipeInput(float input, ref float prevInput)
     {
         if (prevInput > 0 && input > 0)
-            prevInput = Mathf.Max(h, input);
+            prevInput = Mathf.Max(prevInput, input);
         else if (prevInput < 0 && input < 0)
-                prevInput = Mathf.Min(h, input);
+                prevInput = Mathf.Min(prevInput, input);
         else
             prevInput = input;
+    }
+
+    void RestoreRotation()
+    {
+        transform.rotation = initRotation;
     }
 }
 

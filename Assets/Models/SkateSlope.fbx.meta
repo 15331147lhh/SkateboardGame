@@ -1,40 +1,29 @@
 fileFormatVersion: 2
-guid: 5b6dda480c0f4b14aba7712289e1cb89
-timeCreated: 1507199166
+guid: 4d6f08a48b99cc34e91f0af5584d65e0
+timeCreated: 1508255403
 licenseType: Pro
 ModelImporter:
   serializedVersion: 21
   fileIDToRecycleName:
     100000: Box001
-    100002: Cone001
-    100004: Cone002
-    100006: Cone003
-    100008: Cone004
-    100010: //RootNode
+    100002: Box003
+    100004: Cylinder001
+    100006: //RootNode
+    100008: Sphere001
     400000: Box001
-    400002: Cone001
-    400004: Cone002
-    400006: Cone003
-    400008: Cone004
-    400010: //RootNode
-    2300000: Box001
-    2300002: Cone001
-    2300004: Cone002
-    2300006: Cone003
-    2300008: Cone004
-    2300010: //RootNode
-    3300000: Box001
-    3300002: Cone001
-    3300004: Cone002
-    3300006: Cone003
-    3300008: Cone004
-    3300010: //RootNode
-    4300000: Box001
-    4300002: Cone001
-    4300004: Cone002
-    4300006: Cone003
-    4300008: Cone004
-    9500000: //RootNode
+    400002: Box003
+    400004: Cylinder001
+    400006: //RootNode
+    400008: Sphere001
+    2300000: Box003
+    2300002: Cylinder001
+    2300004: Sphere001
+    3300000: Box003
+    3300002: Cylinder001
+    3300004: Sphere001
+    4300000: Sphere001
+    4300002: Box003
+    4300004: Cylinder001
   materials:
     importMaterials: 1
     materialName: 0
@@ -104,7 +93,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 0
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
